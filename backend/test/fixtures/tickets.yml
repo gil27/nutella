@@ -1,10 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  body: MyString
-  author_email: MyString
-  status: MyString
+ticket1:
+  name: ticket1
+  body: bla
+  author_email: sasha@bla
+  status: open
 
 two:
   name: MyString

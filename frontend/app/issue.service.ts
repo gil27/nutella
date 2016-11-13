@@ -3,7 +3,7 @@ import { Issue, ISSUES } from './issue'
 
 @Injectable()
 export class IssueService {
-  getIssues(): Issue[] {
-    return ISSUES;
+  getIssues(): Promise<Issue[]> {
+    return Promise.resolve(ISSUES);
   }
 }

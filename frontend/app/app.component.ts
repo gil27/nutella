@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IssueService } from './issue.service';
+import { Issue } from './issue';
 
 
 @Component({
@@ -7,7 +8,7 @@ import { IssueService } from './issue.service';
   template: `
   <h1>Hello Angular!</h1>
   <h2>My Issues</h2>
-  <ul class="heroes">
+  <ul>
     <li *ngFor="let issue of issues">
       {{issue.name}}
     </li>
@@ -15,7 +16,16 @@ import { IssueService } from './issue.service';
   `,
   providers: [IssueService]
 })
-export class AppComponent {
-  constructor(private issueService: IssueService) { }
-  issues = this.issueService.getIssues();
+export class AppComponent implements OnInit {
+  issues: Issue[];
+
+  constructor(private issueService: IssueService){ }
+
+  getIssues(): void {
+    this.issueService.getIssues().then(issues => this.issues = issues);
+  }
+
+  ngOnInit(): void {
+    this.getIssues();
+  }
 }

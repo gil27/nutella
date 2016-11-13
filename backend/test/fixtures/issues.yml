@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-ticket1:
-  name: ticket1
+issue1:
+  name: issue1
   body: bla
   author_email: sasha@bla
   status: open

@@ -1,5 +1,7 @@
 # Nutella
 
+[![Code Climate](https://codeclimate.com/github/gil27/nutella/badges/gpa.svg)](https://codeclimate.com/github/gil27/nutella) [![Issue Count](https://codeclimate.com/github/gil27/nutella/badges/issue_count.svg)](https://codeclimate.com/github/gil27/nutella)
+
 ![Image of Yaktocat](http://www.lovethispic.com/uploaded_images/49371-Nutella.jpg)
 Eurokrem
 

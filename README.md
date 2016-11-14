@@ -20,7 +20,7 @@ Nutella is composed by two apps: a back-end app built with Rails 5 (api mode) an
 
 ### Installing
 
-Each app (back and front end) has your only installation guide. Check out each app's readme file for more info.
+Each app (back and front end) has its only installation guide. Check out each app's readme file for more info.
 
 
 ## Deployment

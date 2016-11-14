@@ -19,7 +19,9 @@ export class IssuesComponent implements OnInit {
   constructor(private issueService: IssueService){ }
 
   getIssues(): void {
-    this.issueService.getIssues().then(issues => this.issues = issues);
+    this.issueService
+        .getIssues()
+        .then(issues => this.issues = issues);
   }
 
   ngOnInit(): void {

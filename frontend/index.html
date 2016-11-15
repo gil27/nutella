@@ -1,9 +1,25 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Angular QuickStart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Nutella Issues &ndash; Made with sugar</title>
+
+    <link rel="stylesheet" href="./styles.css" class="rel">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <![endif]-->
+
     <!-- 1. Load libraries -->
      <!-- Polyfill for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -16,9 +32,29 @@
       System.import('app').catch(function(err){ console.error(err); });
     </script>
   </head>
-  <!-- 3. Display the application -->
   <body>
+    <div class="pure-menu pure-menu-horizontal">
+      <a href="#" class="pure-menu-heading">NUTELLA</a>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item"><a href="https://github.com/gil27/nutella/issues" class="pure-menu-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="banner">
+      <h1 class="banner-head">
+        Nutella Issues.<br>
+        Sweet app.
+      </h1>
+    </div>
+
+
     <my-app>Loading...</my-app>
 
+    <div class="footer l-box">
+      <p>
+        <a href="https://github.com/gil27/nutella"><i class="fa fa-github" aria-hidden="true"></i> Fork me on github</a>.
+      </p>
+    </div>
   </body>
 </html>

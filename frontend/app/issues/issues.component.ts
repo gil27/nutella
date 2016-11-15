@@ -5,12 +5,20 @@ import { Issue } from './issue';
 @Component({
   selector: 'my-issues',
   template: `
-  <h2>My Issues</h2>
-  <ul>
-    <li *ngFor="let issue of issues">
-      {{issue.name}}
-    </li>
-  </ul>
+  <div class="l-content">
+    <div class="pricing-tables pure-g">
+      <div *ngFor="let issue of issues" class="pure-u-1 pure-u-md-1-3">
+        <div class="pricing-table pricing-table-{{issue.status}}">
+          <div class="pricing-table-header">
+            <h2>{{issue.name}}</h2>
+            <span class="pricing-table-price">
+              <i class="fa fa-life-ring" aria-hidden="true"></i><span>{{issue.created_at}}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   `
 })
 export class IssuesComponent implements OnInit {

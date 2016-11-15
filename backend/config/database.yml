@@ -10,11 +10,11 @@ default: &default
   timeout: 5000
   password: <%= ENV["NUTELLA_PASSWORD"] %>
   username: <%= ENV["NUTELLA_USERNAME"] %>
+  host: localhost
 
 development:
   <<: *default
   database: nutella_postgresql
-  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

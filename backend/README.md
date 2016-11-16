@@ -1,24 +1,4 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Create an issue via CURL command in Linux:
+curl -H "Content-Type:application/json; charset=utf-8" -d '{"name":"sashas issue","body":"bla bla","author_email":"sasha@gmail.com", "status":"open"}' http://localhost:3000/issues

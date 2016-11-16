@@ -3,7 +3,7 @@
 issue1:
   name: issue1
   body: bla
-  author_email: sasha@bla
+  author_email: sasha@bla.com
   status: open
 
 two:

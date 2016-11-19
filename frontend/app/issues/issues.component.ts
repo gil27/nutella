@@ -12,7 +12,7 @@ import { Issue } from './issue';
           <div class="pricing-table-header">
             <h2>{{issue.name}}</h2>
             <span class="pricing-table-price">
-              <i class="fa fa-life-ring" aria-hidden="true"></i><span>{{issue.created_at}}</span>
+              <i class="fa fa-life-ring" aria-hidden="true"></i><span>{{issue.created_at | date:'y/M/d hh:mm'}}</span>
             </span>
           </div>
         </div>

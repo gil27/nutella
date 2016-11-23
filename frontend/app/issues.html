@@ -2,7 +2,7 @@
   <div class="l-box pure-g">
     <div *ngFor="let issue of issues" class="pure-u-1 pure-u-md-1-3">
       <div class="nutella-issue nutella-{{issue.status}}">
-        <div class="issue-label">
+        <div class="issue-label issue-label-{{issue.status}}">
           &nbsp;&nbsp;<i class="fa fa-life-ring fa-4" aria-hidden="true"></i>
           <span>{{issue.status}}</span>
         </div>

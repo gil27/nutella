@@ -36,19 +36,18 @@ p {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 
+
+/* NUTELLA */
+
 .nutella-issues { margin-top: 10px; }
 .nutella-issue { margin-right: 10px; margin-bottom: 10px; margin-top: 10px; }
 .nutella-open { border: 1px solid #e2001b; }
+.nutella-closed { border: 1px solid #4BD647; }
 
-.issue-label{
-    background-color: #e2001b;
-    color: #ffffff;
-    font-weight: bold;
-    margin-bottom: 0px;
-    padding: 3px;
-}
-
-.issue-label span{ font-weight: normal; }
+.issue-label-open { background-color: #e2001b; }
+.issue-label-closed { background-color: #4BD647; }
+.issue-label { color: #ffffff; font-weight: bold; margin-bottom: 0px; padding: 3px; }
+.issue-label span { font-weight: normal; }
 .issue-content { background-color: #F5F9FA; padding: 13px; }
 .issue-content small { color: #232121; }
 .issue-title { font-weight: bold; font-size:32px; }

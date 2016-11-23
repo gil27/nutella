@@ -3,7 +3,6 @@ import { IssueService } from './issue.service';
 import { Issue } from './issue';
 
 @Component({
-  selector: 'my-issues',
   templateUrl: 'app/issues.html'
 })
 export class IssuesComponent implements OnInit {

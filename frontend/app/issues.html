@@ -1,0 +1,22 @@
+<div class="l-content nutella-issues">
+  <div class="l-box pure-g">
+    <div *ngFor="let issue of issues" class="pure-u-1 pure-u-md-1-3">
+      <div class="nutella-issue nutella-{{issue.status}}">
+        <div class="issue-label">
+          &nbsp;&nbsp;<i class="fa fa-life-ring fa-4" aria-hidden="true"></i>
+          <span>{{issue.status}}</span>
+        </div>
+
+        <div class="issue-content">
+          <div class="issue-title">{{issue.name}}</div>
+          <small>author: {{ issue.author_email }}</small>
+          <div>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            {{issue.created_at | date:'y/M/d hh:mm'}}
+          </div>
+          <div class='right'>Assigned to: <b>Jhon Doe</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
